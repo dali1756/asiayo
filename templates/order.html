@@ -1,0 +1,8 @@
+{% block content %}
+<h1>成功！！！</h1>
+<p>Order ID: {{ data.id }}</p>
+<p>Name: {{ data.name }}</p>
+<p>Address: {{ data.address.city }}, {{ data.address.district }}, {{ data.address.street }}</p>
+<p>Price: {{ data.price }}</p>
+<p>Currency: {{ data.currency }}</p>
+{% endblock %}
