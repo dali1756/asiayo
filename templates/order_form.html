@@ -1,13 +1,13 @@
 {% block content %}
 <form action="/api/orders/" method="post">
     {% csrf_token %}
-    <input type="text" name="id" placeholder="Order ID">
-    <input type="text" name="name" placeholder="Name">
-    <input type="text" name="city" placeholder="City">
-    <input type="text" name="district" placeholder="District">
-    <input type="text" name="street" placeholder="Street">
-    <input type="text" name="price" placeholder="Price">
-    <input type="text" name="currency" placeholder="Currency">
-    <button type="submit">Submit</button>
+    <input type="text" name="id" placeholder="訂單編號">
+    <input type="text" name="name" placeholder="姓名">
+    <input type="text" name="city" placeholder="城市">
+    <input type="text" name="district" placeholder="地區">
+    <input type="text" name="street" placeholder="街道">
+    <input type="text" name="price" placeholder="價格">
+    <input type="text" name="currency" placeholder="貨幣">
+    <button type="submit">送出</button>
 </form>
 {% endblock %}
